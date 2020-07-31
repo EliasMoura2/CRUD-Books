@@ -10,7 +10,7 @@ module.exports = {
     path: path.join(__dirname, "backend/public"),
     filename: "js/bundle.js",
   },
-  mode: "development",
+  mode: "production",
   module: {
     rules: [
       {
@@ -30,7 +30,7 @@ module.exports = {
         removeComments: true,
         removeRedundantAttributes: true,
         removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
+        removeStyleLinkAttributes: true,
         useShortDoctype: true,
       },
     }),

@@ -23,14 +23,16 @@ document.getElementById("book-form").addEventListener("submit", (event) => {
 
   const ui = new UI();
   ui.addNewBook(formData);
+  ui.renderMessage("New book add", "success", 3000);
 });
 
 document.getElementById("books-cards").addEventListener("click", (event) => {
+  event.preventDefault();
   if (event.target.classList.contains("delete")) {
-    event.preventDefault();
     // console.log("Eliminando");
     // console.log(event.target.getAttribute("_id"));
     const ui = new UI();
     ui.deleteBook(event.target.getAttribute("_id"));
+    ui.renderMessage("Book removed", "danger", 2000);
   }
 });
