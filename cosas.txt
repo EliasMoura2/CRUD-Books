@@ -1,0 +1,3 @@
+
+Para el frontend instalamos
+npm i webpack webpack-cli html-webpack-plugin css-loader style-loader mini-css-extract-plugin webpack-dev-server timeago.js -D
