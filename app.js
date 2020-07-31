@@ -5,6 +5,7 @@ const path = require("path");
 
 // Initialization
 const app = express();
+require("./database");
 
 //settings
 
@@ -24,6 +25,9 @@ app.use(express.json());
 
 //routes
 app.use("/api/books", require("./ruotes/books"));
+
+// Static files
+app.use(express.static(path.join(__dirname, "public")));
 
 // 404 Handler
 app.get((req, res) => {
