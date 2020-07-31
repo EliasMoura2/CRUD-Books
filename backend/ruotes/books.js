@@ -1,4 +1,6 @@
 const { Router } = require("express");
+const { unlink } = require("fs-extra");
+const path = require("path");
 const router = Router();
 
 /*
@@ -34,7 +36,8 @@ router.delete("/:id", async (req, res) => {
   // const book = await Book.findByIdAndDelete(req.params.id);
   // console.log(book);
   // res.send("Deleting book");
-  await Book.findByIdAndDelete(req.params.id);
+  const book = await Book.findByIdAndDelete(req.params.id);
+  unlink(path.resolve("./backend/public" + book.imagePath));
   res.json({ message: "Book deleted" });
 });
 
