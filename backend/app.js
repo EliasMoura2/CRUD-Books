@@ -2,7 +2,7 @@ const express = require("express");
 const morgan = require("morgan");
 const multer = require("multer");
 const path = require("path");
-
+const cors = require("cors");
 // Initialization
 const app = express();
 require("./database");
@@ -17,11 +17,10 @@ const storage = multer.diskStorage({
     cb(null, new Date().getTime() + path.extname(file.originalname));
   },
 });
-
 app.use(multer({ storage }).single("image"));
-
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(cors());
 
 //routes
 app.use("/api/books", require("./ruotes/books"));
