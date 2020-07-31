@@ -2,10 +2,11 @@
   "name": "crud-books",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "dev": "cross-env NODE_ENV= development node index.js",
+    "start": "cross-env NODE_ENV= produccion node index.js"
   },
   "repository": {
     "type": "git",
