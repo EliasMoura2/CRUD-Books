@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Books JS</title>
+    <title>Books App</title>
     <!-- BOOSTRAP 4 -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    /> -->
+
+    <!-- BOOTWATCH -->
     <link
       rel="stylesheet"
       href="https://bootswatch.com/4/lumen/bootstrap.min.css"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://bootswatch.com/4/lumen/bootstrap.min.css"
-    />
-
-    <!-- ANIMATE CSS -->
+    <!-- ANAMATE CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
@@ -34,39 +37,23 @@
           <!-- div de alert -->
           <form id="book-form" class="card card-body">
             <div class="form-group">
-              <input
-                type="text"
-                id="title"
-                class="form-control"
-                placeholder="Book Title"
-                autofocus
-              />
+              <input type="text" id="title" class="form-control" placeholder="Book Title" autofocus />
             </div>
             <div class="form-group">
-              <input
-                type="text"
-                id="author"
-                class="form-control"
-                placeholder="Author"
-              />
+              <input type="text" id="author" class="form-control" placeholder="Author"/>
             </div>
             <div class="form-group">
-              <input
-                type="text"
-                id="isbn"
-                class="form-control"
-                placeholder="ISBN"
-              />
+              <input type="text" id="isbn" class="form-control" placeholder="ISBN"/>
             </div>
             <div class="input-group mb-3">
               <div class="custom-file">
                 <input type="file" id="image" class="custom-file-input" />
-                <label for="image" class="custom-file-label"
-                  >Choose Image</label
-                >
+                <label for="image" class="custom-file-label"> Choose Image </label>
               </div>
             </div>
-            <button class="btn btn-dark btn-block">Save Book</button>
+            <button class="btn btn-dark btn-block">
+              Save Book
+            </button>
           </form>
         </div>
         <div class="col-md-8" id="books-cards"></div>

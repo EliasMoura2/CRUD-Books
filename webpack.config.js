@@ -30,7 +30,7 @@ module.exports = {
         removeComments: true,
         removeRedundantAttributes: true,
         removeScriptTypeAttributes: true,
-        removeStyleLinkAttributes: true,
+        removeStyleLinkTypeAttributes: true,
         useShortDoctype: true,
       },
     }),

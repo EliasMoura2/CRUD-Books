@@ -12,7 +12,7 @@ document.getElementById("book-form").addEventListener("submit", (event) => {
   const author = document.getElementById("author").value;
   const isbn = document.getElementById("isbn").value;
   const image = document.getElementById("image").files;
-  // console.log(title, author, isbn, img);
+  //console.log(title, author, isbn, image);
 
   //formulario virtual para enviar
   const formData = new FormData();
@@ -20,6 +20,16 @@ document.getElementById("book-form").addEventListener("submit", (event) => {
   formData.append("title", title);
   formData.append("author", author);
   formData.append("isbn", isbn);
+
+  // const bookService = new BookService();
+  // bookService.postBook(formData);
+  /*
+lo ponemos en UI.js
+const bookService = new BookService();
+bookService.postBook();
+bookService recibe un objeto por lo que
+lo guardaremos en un formulario virtual
+*/
 
   const ui = new UI();
   ui.addNewBook(formData);

@@ -28,7 +28,7 @@ router.post("/", async (req, res) => {
   const newBook = new Book({ title, author, isbn, imagePath });
   // console.log(newBook);
   await newBook.save();
-  res.json({ message: "Book saved" });
+  res.json({ message: "Book save" });
 });
 
 router.delete("/:id", async (req, res) => {

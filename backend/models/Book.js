@@ -1,15 +1,15 @@
 const { Schema, model } = require("mongoose");
 
-const bookSchema = new Schema({
-  title: { type: String, required: true },
-  author: { type: String, required: true },
-  isbn: { type: String, required: true },
+const BookSchema = new Schema({
+  title: { type: String, requiered: true },
+  author: { type: String, requiered: true },
+  isbn: { type: String, requiered: true },
   imagePath: { type: String },
-  create_at: { type: Date, default: Date.now },
+  created_at: { type: Date, default: Date.now },
 });
 
 /*
 create_at:  {type : Date, default: Date.now}
 */
 
-module.exports = model("Book", bookSchema);
+module.exports = model("Book", BookSchema);
