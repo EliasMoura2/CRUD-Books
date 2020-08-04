@@ -16,22 +16,20 @@ class UI {
         <div class="card m-2">
           <div class="row no-gutters">
               <div class="col-md-4">
-                  <img src="http://localhost:4500${
-                    book.imagePath
-                  }" alt="" class="img-fluid"/>
+                  <img src="${ book.imagePath }" alt="" class="img-fluid"/>
               </div>
               <div class="col-md-8">
                   <div class="card-block px-2">
                       <label>Title:</label>
-                      <h4 class="card-title">${book.title}</h4>
+                      <h4 class="card-title">${ book.title }</h4>
                   </div>
                   <div class="card-block px-2">
                     <label>Author:</label> 
-                      <p class="card-text">${book.author}</p>
+                      <p class="card-text">${ book.author }</p>
                   </div>
                   <div class="card-block px-2">
                       <label>Isbn:</label>
-                      <p class="card-text">${book.isbn}</p>
+                      <p class="card-text">${ book.isbn }</p>
                   </div>
                   <div class="card-block px-2">
                       <a href="#" class="btn btn-danger delete m-2" _id="${ book._id }">Eliminar</a>
