@@ -37,7 +37,7 @@ class UI {
               </div>
           </div>
           <div class="card-footer">
-              ${format(book.create_at)}
+              ${format(book.created_at)}
           </div>
         </div>
         `;
