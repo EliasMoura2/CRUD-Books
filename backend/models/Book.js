@@ -13,3 +13,7 @@ create_at:  {type : Date, default: Date.now}
 */
 
 module.exports = model("Book", BookSchema);
+/*  
+Poner en minuscula 
+module.exports = model("Book", bookSchema);
+*/
