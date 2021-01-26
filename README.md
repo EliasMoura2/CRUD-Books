@@ -29,8 +29,8 @@ CRUD para la creacion de libros, desarrollada con Node.js en el back y vanilla J
    4. [mongoose](https://mongoosejs.com/)
    5. [cors](https://www.npmjs.com/package/cors)
    6. [cross-env](https://www.npmjs.com/package/cross-env)
-   7. [fs-extra](
-   8. [multer](
+   7. [fs-extra](https://www.npmjs.com/package/fs-extra)
+   8. [multer](https://www.npmjs.com/package/multer)
 2. Dev Dependecies:
    1. [nodemon](https://nodemon.io/)
    2. [webpack](https://www.webpack.com.ar/)
